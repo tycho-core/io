@@ -67,7 +67,7 @@ namespace io
 
 	int path::length() const
 	{
-		return m_path.length();
+		return static_cast<int>(m_path.length());
 	}
 		
 	//------------------------------------------------------------------------------------

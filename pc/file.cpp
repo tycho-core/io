@@ -108,7 +108,7 @@ namespace pc
 	{
 		if(!m_f)
 			return false;
-		return ::fread(buffer, 1, size, m_f);
+		return static_cast<int>(::fread(buffer, 1, size, m_f));
 	}
 	
 	//------------------------------------------------------------------------------------

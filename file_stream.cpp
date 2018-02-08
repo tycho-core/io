@@ -61,7 +61,7 @@ namespace io
 		if(!m_file || state() != stream_state_ok)
 			return false;
 		buffer.resize((size_t)m_file->size());
-		return read(&buffer[0], (size_t)m_file->size()) > 0;
+		return read(&buffer[0], (int)m_file->size()) > 0;
 	}
 	
 	//------------------------------------------------------------------------------------
