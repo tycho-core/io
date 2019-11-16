@@ -11,6 +11,7 @@
 #include "io/file.h"
 #include "io/mount_point.h"
 #include "core/debug/assert.h"
+#include <algorithm>
 
 //////////////////////////////////////////////////////////////////////////////
 // CLASS
